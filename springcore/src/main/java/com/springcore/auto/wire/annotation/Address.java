@@ -1,0 +1,25 @@
+package com.springcore.auto.wire.annotation;
+
+public class Address {
+
+	@Override
+	public String toString() {
+		return "Address [street=" + street + ", city=" + city + "]";
+	}
+	public String getStreet() {
+		return street;
+	}
+	public void setStreet(String street) {
+		this.street = street;
+	}
+	public String getCity() {
+		return city;
+	}
+	public void setCity(String city) {
+		System.out.println("inside setter injection");
+		this.city = city;
+	}
+	private String street;
+	private String city;
+	
+}
